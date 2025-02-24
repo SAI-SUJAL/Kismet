@@ -28,7 +28,7 @@ const AuthProvider = ({ children }) => {
   // Function to handle login
   const login = async (rollNumber, password) => {
     try {
-      const response = await axios.post('http://localhost:3000/login', {
+      const response = await axios.post('https://kismet.vercel.app/login', {
         rollNumber,
         password,
       });
